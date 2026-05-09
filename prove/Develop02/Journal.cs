@@ -46,6 +46,8 @@ class Journal
         // The Split method returns a list of strings
         // from between each specified character.
         string[] string_entries = journal.Split('\n');
+        // Drop last item in array as it's a null string
+        string_entries = string_entries[..^1];
         List<Entry> entries = new List<Entry>();
         // "For each line in the journal file."
         foreach (string string_entry in string_entries)
