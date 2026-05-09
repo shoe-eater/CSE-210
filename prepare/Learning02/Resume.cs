@@ -3,13 +3,14 @@ public class Resume
     public string _name;
     public List<Job> _jobs = new List<Job>();
 
-    public void DisplayResumeDetails()
+    public string toString()
     {
-        Console.WriteLine($"Name: {_name}");
-        Console.WriteLine("Jobs:");
+        string stringOut = $"Name: {_name}\n";
+        stringOut += "Jobs:\n";
         foreach (Job job in _jobs)
         {
-            job.DisplayJobDetails();
+            stringOut += job.toString();
         }
+        return stringOut;
     }
 }
