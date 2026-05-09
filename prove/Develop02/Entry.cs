@@ -24,7 +24,9 @@ class Entry
 
     public string ToString()
     {
-        return $"{_prompt} {_response} {_date}\n";
+        // Because this ends with its own newline, anything
+        // that prints entries should use Console.Write()
+        return $"{_prompt}\n{_response}\n{_date}\n";
     }
 
     public string ToStringForCsv()
