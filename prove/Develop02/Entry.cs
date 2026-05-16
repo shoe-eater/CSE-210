@@ -1,36 +1,36 @@
 class Entry
 {
-    private string _prompt;
-    private string _response;
-    private string _date;
+    private string _sjr_prompt;
+    private string _sjr_response;
+    private string _sjr_date;
 
-    public Entry(string prompt = "", string response = "")
+    public Entry(string sjr_prompt = "", string sjr_response = "")
     {
         // Contructor accepts a prompt and response, but
         // uses DateTime to get the date automatically.
-        _prompt = prompt;
-        _response = response;
-        _date = DateTime.Now.ToString();
+        _sjr_prompt = sjr_prompt;
+        _sjr_response = sjr_response;
+        _sjr_date = DateTime.Now.ToString();
     }
 
-    public Entry(string prompt, string response, string date)
+    public Entry(string sjr_prompt, string sjr_response, string sjr_date)
     {
         // This contructor is used for loading a journal
         // from a file.
-        _prompt = prompt;
-        _response = response;
-        _date = date;
+        _sjr_prompt = sjr_prompt;
+        _sjr_response = sjr_response;
+        _sjr_date = sjr_date;
     }
 
     public string ToString()
     {
         // Because this ends with its own newline, anything
         // that prints entries should use Console.Write()
-        return $"{_prompt}\n{_response}\n{_date}\n";
+        return $"{_sjr_prompt}\n{_sjr_response}\n{_sjr_date}\n";
     }
 
     public string ToStringForCsv()
     {
-        return $"{_prompt}~{_response}~{_date}\n";
+        return $"{_sjr_prompt}~~~{_sjr_response}~~~{_sjr_date}\n";
     }
 }
