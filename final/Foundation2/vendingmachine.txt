@@ -1,0 +1,5 @@
+4.25
+10, 6, 6, 6, 8, 8
+B1, Bag of Doritoes, 2.5, 5
+E1, Butterfinger, 1.75, 8
+E4, Fruit Snacks, 1.5, 8

@@ -1,0 +1,4 @@
+Koala: eucalyptus leaves, 2.5
+Iguana: insects, 0.75
+Toucan: fruit, 0.25; seeds, 0.25
+Chimpanzee: fruit, 1.5; meat, 1

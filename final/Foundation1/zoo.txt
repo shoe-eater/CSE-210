@@ -1,0 +1,4 @@
+Koala: 3
+Iguana: 1
+Toucan: 2
+Chimpanzee: 4
